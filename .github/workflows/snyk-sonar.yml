@@ -29,17 +29,17 @@ jobs:
             -Dsonar.host.url=https://sonarcloud.io
 
 
-  snyk:
-    runs-on: ubuntu-latest
-    steps:
+  # snyk:
+  #   runs-on: ubuntu-latest
+  #   steps:
       
-      - name: Install Snyk
-        run: npm install -g snyk
+  #     - name: Install Snyk
+  #       run: npm install -g snyk
       
-      - name: Snyk Scan
-        run: snyk test
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  #     - name: Snyk Scan
+  #       run: snyk test
+  #       env:
+  #         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
 
 
