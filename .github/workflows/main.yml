@@ -30,4 +30,4 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install dist/*.whl
-          python -c "from my_lib.math_utils import multiply; print('multiplication result =', multiply(10,5))"
+          python -c "from my_lib.math_utils import divide; print('division result =', divide(10,5))"
