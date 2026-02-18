@@ -1,1 +1,1 @@
-from .math_utils import multiply
+from .math_utils import divide
